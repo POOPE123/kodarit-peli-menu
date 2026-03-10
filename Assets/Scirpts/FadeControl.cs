@@ -8,7 +8,7 @@ public class FadeControl : MonoBehaviour
     public float fadeDuration = 1f;
 
     private Image fadeObject;
-    private Color originalcolor;
+    private Color originalColor;
 
     private Coroutine coroutine;
 
@@ -22,6 +22,17 @@ public class FadeControl : MonoBehaviour
         }
 
         Color originalColor = fadeObject.color;
+    }
+
+    public void FadeIn()
+    {
+        StartFade(originalColor.a);
+    }
+
+
+    public void fadeOut()
+    {
+        StartFade(0f);
     }
 
     private void StartFade(float targetAlpha)
