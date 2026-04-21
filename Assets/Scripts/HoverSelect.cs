@@ -10,7 +10,7 @@ IPointerClickHandler
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        
+        selector.SetIndex(index);
     }
 
     public void OnPointerClick(PointerEventData eventData)

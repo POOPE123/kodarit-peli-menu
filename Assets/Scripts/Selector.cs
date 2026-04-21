@@ -57,6 +57,12 @@ public class Selector : MonoBehaviour
         }
     }
 
+    public void SetIndex(int i)
+    {
+        index = i;
+        ChangeColors();
+    }
+
     private IEnumerator ChangeScenes(string sceneName)
     {
         fade.FadeIn();

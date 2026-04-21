@@ -26,7 +26,7 @@ public class FadeControl : MonoBehaviour
 
     public void FadeIn()
     {
-        StartFade(originalColor.a);
+        StartFade(255f);
     }
 
 
